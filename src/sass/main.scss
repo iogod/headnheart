@@ -1,0 +1,44 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    
+
+   
+}
+div{
+    color: #eff;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to right, rgba(#172A3A,0.85),rgba(#508991,0.85)),url(../img/adobe2.png);
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+   
+}
+
+.mgsmall {
+
+    margin-bottom: 10rem;
+}
+
+.mgmd {
+
+    margin-bottom: 18rem;
+}
+ul{
+    list-style-type: none;
+}

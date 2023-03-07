@@ -1,0 +1,38 @@
+.comment{
+    
+    &__toggle {
+
+        flex-direction: row;
+    }
+
+    &__btn,
+    &__btn:link,
+    &__btn:visited {
+        font-size: 2.4rem;
+        font-weight: 300;
+       text-align: center;
+       margin: 3.5rem 0rem;
+       background-color:#eff;
+       width:max-content;
+       min-height:3.5rem;
+       max-height: 7.5rem;
+       text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 10rem;
+        cursor: pointer;
+        color: #004346;
+        padding: 0rem 1.5rem;
+        padding-bottom: .5rem;
+        transition: .3s all ease-in;
+
+        &:hover {
+            background-color: #004346;
+            color: #eff;
+            transform: translateY(-2px);
+        }
+
+        
+       
+       
+    }
+}

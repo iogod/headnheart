@@ -1,0 +1,200 @@
+
+
+.servicecard{
+
+  text-align: center;
+    height: 55rem;
+    width: 100%;
+    min-width: 35rem;
+    position: relative;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ margin-top: .7rem;
+ *> {
+  text-align: center;
+ }
+ 
+ 
+border-radius: 10px;
+ box-shadow: 0 2rem 4rem rgba(#fff, .15);
+ 
+ animation: none;
+ @keyframes loadingZone { 
+
+  0% {
+    transform:translateY(-22px);
+}
+50% {
+    transform:translateY(22px);
+}
+
+100% {
+  transform:translateY(-22px);
+}
+
+
+  
+ }
+ background-color: rgba($color: #eff, $alpha: 0.25);
+ &__list{
+    padding-left: 0;
+    width: 100%;
+ }
+
+ &__back{
+color:#004346;
+  position: absolute;
+  bottom:0%;
+  left:.5%;
+  font-size: 1.8rem;
+
+ }
+
+&__btn{
+
+  margin-top: 2rem;
+  padding:0rem 4rem;
+  border-radius: 100px;
+  width: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-size: 3.2rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: rgba($color: #eff, $alpha: 0.35);
+  
+  &:hover{
+    background-color: #172A3A;
+   
+  }
+
+
+
+}
+
+&__flex{
+
+
+width: 100%;
+height: 100%;
+background-color: white;
+border: #eff 4px;
+color:darkslategray;
+font-size: 1.9rem;
+font-weight: 700;
+ justify-content: space-evenly;
+animation: gogo .5s ease-out;
+@keyframes gogo {
+  0% {
+    height: 0%;
+  }
+  50% {
+    height: 50%;
+  }
+  
+  100% {
+    height: 100%;
+  }
+}
+
+
+input{
+  color:#004346;
+  width:95%;
+  border: none;
+  &:focus{
+    outline:none;
+  }
+
+  
+}
+input[type="email"]{
+  color:#004346;
+  height:6rem;
+  border-radius: 80px;
+  padding-left: 1rem;
+  border: none;
+  &:focus{
+    outline:none;
+  }
+
+  
+}
+
+button{
+  text-align: center;
+  width: 100%;
+ margin-top: .5rem;
+
+  
+  height:.5rem;
+  
+  
+}
+textarea{
+
+  width: 95%;
+border: none;
+  padding:0rem .4rem;
+  transform: translateX(-3px);
+  &:focus{
+    outline:none;
+  }
+
+
+}
+
+
+
+}
+
+&__inquire{
+ 
+  display: flex;
+  width: 100%;
+  height: 75%;
+  background-color: transparent;
+  flex-direction: column;
+align-self: flex-end;
+
+}
+
+
+}
+
+.titleBlock{
+
+     position:absolute;
+   top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #172A3A, $alpha: 0.10);
+
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 0% 100%);
+    font-size: 5rem;
+    font-weight: 500;
+ 
+    text-align: center;
+  
+}
+
+
+.listBlock{
+  z-index: 200;
+  position: relative;
+  display: flex;
+    color: #efe;
+    font-size: 3.5rem;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+  align-items: flex-end;
+   justify-content: space-evenly;
+height:100%;
+}
