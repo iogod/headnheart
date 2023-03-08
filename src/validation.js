@@ -1,4 +1,4 @@
-const Joi = require("joi");
+export const Joi = require("joi");
 const validateComment = (objComment) => {
   const JoiSchema = Joi.object({
     commentText: Joi.string().min(1).max(250).required(),
@@ -12,7 +12,7 @@ const validateComment = (objComment) => {
   return error;
 };
 
-const validateInquiry = (objComment) => {
+export const validateInquiry = (objComment) => {
   const JoiSchema = Joi.object({
     package: Joi.string().min(1).max(2).required(),
 
@@ -24,7 +24,7 @@ const validateInquiry = (objComment) => {
   return error;
 };
 
-const validateUpdate = (objComment) => {
+export const validateUpdate = (objComment) => {
   const JoiSchema = Joi.object({
     postID: Joi.string().min(1).max(50).required(),
     priority: Joi.boolean().required(),
@@ -33,7 +33,7 @@ const validateUpdate = (objComment) => {
   return error;
 };
 
-const validateSignUp = (objComment) => {
+export const validateSignUp = (objComment) => {
   const JoiSchema = Joi.object({
     first: Joi.string().min(1).max(30).required(),
     last: Joi.string().min(1).max(30).required(),
@@ -43,7 +43,7 @@ const validateSignUp = (objComment) => {
   return error;
 };
 
-const verifyToken = async (req, res, next) => {
+export const verifyToken = async (req, res, next) => {
   //Auth header value = > send token into header
   const bearerHeader = req.headers.authorization;
   //check if bearer is undefined
@@ -68,10 +68,10 @@ const verifyToken = async (req, res, next) => {
   }
 };
 
-module.exports = {
-  validateComment,
-  verifyToken,
-  validateInquiry,
-  validateSignUp,
-  validateUpdate,
-};
+// module.exports = {
+//   validateComment,
+//   verifyToken,
+//   validateInquiry,
+//   validateSignUp,
+//   validateUpdate,
+// };
