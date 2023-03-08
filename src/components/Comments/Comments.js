@@ -15,7 +15,6 @@ dayjs.extend(relativeTime);
 function Comments({
   deleteCom,
   commentText,
-  username,
   time,
   companyName,
   docID,
@@ -24,7 +23,6 @@ function Comments({
   authID,
 }) {
   const { currentUser } = useContext(AuthContext);
-  const auth = getAuth();
 
   const [idToken, setidToken] = useState("");
   const GetToken = async () => {
@@ -45,7 +43,7 @@ function Comments({
   };
 
   const changePriority = async () => {
-    const prior = await axios
+    await axios
       .post(
         "https://us-central1-hnh-chuki.cloudfunctions.net/resume/comment/" +
           docID,
