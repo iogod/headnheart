@@ -3,7 +3,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { ReactComponent as Cancel } from "../../img/SVG/cancel-circle.svg";
 import { ReactComponent as HighPri } from "../../img/SVG/star-full.svg";
 import { ReactComponent as LowPri } from "../../img/SVG/star-empty.svg";
-import { getAuth, updateCurrentUser } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import axios from "axios";
 import "./comments.scss";
 import dayjs from "dayjs";
