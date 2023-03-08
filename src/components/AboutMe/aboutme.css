@@ -1,0 +1,81 @@
+.ca {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutme {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.aboutme__space {
+  display: inline-block;
+  align-items: stretch;
+  flex-direction: column;
+}
+.aboutme__title {
+  font-size: 6.5rem;
+  font-family: "Brush Script MT";
+  color: #09BC88;
+  text-align: center;
+}
+.aboutme__subtitle {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+.aboutme__description {
+  font-size: 2.6rem;
+  word-wrap: normal;
+  padding: 0.5rem 3rem;
+}
+.aboutme__description:last-child {
+  margin-bottom: 2rem;
+}
+@media (max-width: 700px) {
+  .aboutme__description {
+    text-indent: 0rem;
+    text-align: left;
+  }
+}
+.aboutme__img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  margin: auto;
+}
+.aboutme__video {
+  display: flex;
+}
+.aboutme__video--pod {
+  overflow: hidden;
+}
+.aboutme__twenties {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #508991;
+  font-weight: 200;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  font-size: 2.5rem;
+  width: 33rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s all;
+}
+.aboutme__twenties:hover {
+  background-color: #172A3A;
+  transform: scale(1.1);
+}
+.aboutme .years {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 500;
+}/*# sourceMappingURL=aboutme.css.map */

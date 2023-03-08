@@ -1,0 +1,231 @@
+.popup {
+  position: fixed;
+  background-color: #508991;
+  top: 20%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, 50%);
+  width: 40%;
+  height: 40%;
+  min-width: 40rem;
+  min-height: 40rem;
+  z-index: 1000;
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+}
+@media (max-width: 1300px) {
+  .popup {
+    min-height: 45rem;
+    width: 100%;
+    height: 50%;
+  }
+}
+.popup__changeinfo {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 50%;
+  width: 100%;
+  height: 100%;
+}
+.popup__changeinfo input {
+  width: 100%;
+  padding: 0.8rem 0.8rem;
+  outline: none;
+  border: #09BC88;
+}
+.popup__changeinfo button {
+  display: grid;
+  margin-top: 0.8rem;
+  width: 100%;
+}
+.popup__signin {
+  display: block;
+  position: fixed;
+  top: 3%;
+  right: 4%;
+  height: 25rem;
+  width: 25rem;
+  color: #508991;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: transparent;
+}
+@media (max-width: 1100px) {
+  .popup__signin {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 2rem;
+  }
+}
+.popup__signin-button {
+  position: absolute;
+  font-size: 2rem;
+  top: 10%;
+  left: 50%;
+  color: #508991;
+  transform: translate(-50%, 50%);
+}
+.popup__grid {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0.5rem 2rem;
+}
+@media (max-width: 1300px) {
+  .popup__grid {
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+  }
+}
+.popup p {
+  color: red;
+}
+.popup__overlay {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.popup > * {
+  margin: 1rem;
+}
+.popup input {
+  width: 92%;
+  background-color: white;
+  border: #eff 4px;
+  color: grey;
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-left: 3rem;
+}
+.popup input:focus {
+  outline: none;
+}
+.popup input[type=email] {
+  width: 92%;
+  background-color: white;
+  border: #eff 4px;
+  color: grey;
+  font-size: 1.9rem;
+  height: 5rem;
+  font-weight: 700;
+  border-radius: 40px;
+  padding-left: 1rem;
+}
+.popup input[type=email]:focus {
+  outline: none;
+}
+.popup form {
+  width: 80%;
+}
+.popup button {
+  border-radius: 8px;
+  color: white;
+  width: 10rem;
+  margin-top: 2rem;
+  margin-right: 5rem;
+  padding: 1rem 1rem;
+  background-color: #508991;
+  border: none;
+}
+.popup__label {
+  font-size: 8rem;
+  font-family: "Brush Script MT";
+}
+.popup__close {
+  font-size: 2.2rem;
+  color: white;
+  position: fixed;
+  top: -5%;
+  right: -7.5%;
+  border: none;
+}
+
+.butter {
+  margin: 2rem 0;
+}
+
+.intro {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 4rem;
+  margin-bottom: 14rem;
+}
+.intro__title {
+  font-size: 6.5vw;
+  font-weight: 400;
+  font-family: "Brush Script MT";
+  color: #09BC88;
+}
+.intro__logo {
+  width: 16vw;
+  height: 16vw;
+  display: block;
+  margin: auto;
+  border-radius: 150px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.intro button {
+  max-height: 8rem;
+  width: 30%;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0rem 2rem;
+  color: rgba(255, 215, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.95);
+  border: #508991;
+}
+@media (max-width: 1100px) {
+  .intro button {
+    width: 60%;
+    padding: 0rem 0rem;
+  }
+}
+.intro button::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+.intro button::placeholder {
+  color: white;
+  opacity: 1;
+}
+.intro button:visited {
+  outline-color: white;
+}
+.intro__seen {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+.intro__seen::before, .intro__seen::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: #eff;
+}
+.intro__seen--assets {
+  display: flexbox;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.intro__seen--assets img {
+  width: 18vw;
+  margin: 1rem 2rem;
+}/*# sourceMappingURL=intro.css.map */
