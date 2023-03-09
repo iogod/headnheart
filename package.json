@@ -5,7 +5,7 @@
   "scripts": {
     "reactstart": "react-scripts start",
     "start": "react-scripts start",
-    "build": "react-scripts build --stats",
+    "build": "react-scripts build -p",
     "analyze": "webpack-bundle-analyzer build/bundle-stats.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
