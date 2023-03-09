@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
-import Container from "react-bootstrap/Container";
+import { Container } from "react-bootstrap/";
 import "./sass/layout.scss";
 import AboutMe from "./components/AboutMe/Aboutme";
 import Services from "./components/Services/Services";
 import CommentContainer from "./components/CommentContainer/CommentContainer";
-import { getApp } from "firebase/app";
+// import { getApp } from "firebase/app";
 import { AuthProvider } from "./Auth";
 function App() {
   const [signUp, updateNavbar] = useState(true);
