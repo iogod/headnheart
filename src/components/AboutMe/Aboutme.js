@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import logo from "../../img/hnh1.png";
 import podcastimg from "../../img/podimg.png";
 import "./aboutme.scss";
 
@@ -98,7 +98,7 @@ function Aboutme() {
             md={12}
             lg={6}
           >
-            <Row className="mgmd">
+            <Row className="aboutme__marg">
               {/* <img
                 className="aboutme__video--pod"
                 src={podcastimg}
@@ -108,9 +108,20 @@ function Aboutme() {
                 className="aboutme__video--pod"
                 controls
                 poster={podcastimg}
-                // src={podcast}
-                width="600"
-                height="600"
+                src={
+                  "https://soundcloud.com/autoremarketing/assessing-diversity-equity-inclusion-with-pdp-groups-deshaun-sheppard?utm_source=clipboard&utm_campaign=wtshare&utm_medium=widget&utm_content=https%253A%252F%252Fsoundcloud.com%252Fautoremarketing%252Fassessing-diversity-equity-inclusion-with-pdp-groups-deshaun-sheppard"
+                }
+                width="400px"
+                height="400px"
+              ></video>
+
+              <video
+                className="aboutme__video--pod"
+                controls
+                poster={logo}
+                src={"https://www.youtube.com/watch?v=HqqHkMYZjCM"}
+                width="400px"
+                height="400px"
               ></video>
             </Row>
           </Col>

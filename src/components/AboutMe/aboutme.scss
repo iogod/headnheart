@@ -3,12 +3,19 @@
     display: table;
     margin:0 auto; 
     text-align: center;
+   
 
 }
 .aboutme {
 
     font-size: 1.5rem;
     font-weight: 100;
+
+    &__marg {
+
+  margin-top: auto;
+  margin-bottom: 2rem;
+    }
   
     
    &__space{
