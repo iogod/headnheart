@@ -94,35 +94,35 @@ function Aboutme() {
           </Col>
 
           <Col
-            className="aboutme__video  justify-content-center "
+            className="aboutme__video    justify-content-center "
             md={12}
             lg={6}
           >
+            {/* <Row className="justify-content-center">
+              
+            </Row> */}
+
             <Row className="aboutme__marg">
               {/* <img
                 className="aboutme__video--pod"
                 src={podcastimg}
                 alt="podcast"
               ></img> */}
-              <video
-                className="aboutme__video--pod"
-                controls
-                poster={podcastimg}
-                src={
-                  "https://soundcloud.com/autoremarketing/assessing-diversity-equity-inclusion-with-pdp-groups-deshaun-sheppard?utm_source=clipboard&utm_campaign=wtshare&utm_medium=widget&utm_content=https%253A%252F%252Fsoundcloud.com%252Fautoremarketing%252Fassessing-diversity-equity-inclusion-with-pdp-groups-deshaun-sheppard"
-                }
-                width="400px"
-                height="400px"
-              ></video>
+              <h1 className="aboutme__title"> Podcast Features</h1>
 
-              <video
-                className="aboutme__video--pod"
-                controls
-                poster={logo}
-                src={"https://www.youtube.com/watch?v=HqqHkMYZjCM"}
-                width="400px"
+              <iframe
+                frameborder="no"
+                src={"https://www.youtube.com/embed/HqqHkMYZjCM"}
+                width="90%"
                 height="400px"
-              ></video>
+              ></iframe>
+              <iframe
+                loading="lazy"
+                frameborder="no"
+                height="400px"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1169302441&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
+                width="90%"
+              ></iframe>
             </Row>
           </Col>
         </Row>
