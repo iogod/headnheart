@@ -111,14 +111,12 @@ function Aboutme() {
               <h1 className="aboutme__title"> Podcast Features</h1>
 
               <iframe
-                frameborder="no"
                 src={"https://www.youtube.com/embed/HqqHkMYZjCM"}
                 width="90%"
                 height="400px"
               ></iframe>
               <iframe
                 loading="lazy"
-                frameborder="no"
                 height="400px"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1169302441&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
                 width="90%"
