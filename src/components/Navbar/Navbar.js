@@ -123,6 +123,15 @@ function Navbar({ popupState, updatePop }) {
     );
   }
 
+  const submitReset = () => {
+    sendPasswordResetEmail(auth, forgotEmail)
+      .then(() => {
+        alert("Forgot password sent to email provdied");
+        window.location.reload();
+      })
+      .catch((error) => {});
+  };
+
   const sumbitSignUp = async (signUpObject) => {
     await createUserWithEmailAndPassword(auth, email, password)
       .then(() => {
@@ -330,12 +339,8 @@ function Navbar({ popupState, updatePop }) {
             className="nav__forgotform"
             hidden={!forgotState}
             onSubmit={(e) => {
-              const auth = getAuth();
               e.preventDefault();
-              sendPasswordResetEmail(auth, forgotEmail)
-                .then(() => {})
-                .catch((error) => {});
-              alert("Forgot password sent to email provdied");
+              submitReset();
             }}
           >
             <input
