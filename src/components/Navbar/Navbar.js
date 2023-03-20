@@ -106,6 +106,8 @@ function Navbar({ popupState, updatePop }) {
       .catch(() => {});
   };
 
+  const sendReset = () => {};
+
   function FlexItem() {
     return currentUser ? (
       <a onClick={handleLogout}>Logout</a>
@@ -139,7 +141,7 @@ function Navbar({ popupState, updatePop }) {
           alert("Email Already In Use - Plese Sign In ");
           setInState(!signInState);
         } else {
-          alert(error.message);
+          // alert(error.message);
         }
       });
   };
@@ -327,8 +329,9 @@ function Navbar({ popupState, updatePop }) {
           <form
             className="nav__forgotform"
             hidden={!forgotState}
-            onSubmit={() => {
+            onSubmit={(e) => {
               const auth = getAuth();
+              e.preventDefault();
               sendPasswordResetEmail(auth, forgotEmail)
                 .then(() => {})
                 .catch((error) => {});
