@@ -347,7 +347,6 @@ function Navbar({ popupState, updatePop }) {
               type="email"
               id="forgotpass"
               name="forgotpass"
-              defaultValue={email.length > 1 ? email : null}
               placeholder="Enter email to reset password"
               onChange={(e) => {
                 setforgotEmail(e.target.value);
