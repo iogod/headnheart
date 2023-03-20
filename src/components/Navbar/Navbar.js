@@ -331,10 +331,8 @@ function Navbar({ popupState, updatePop }) {
               const auth = getAuth();
               sendPasswordResetEmail(auth, forgotEmail)
                 .then(() => {})
-                .catch((error) => {
-                  alert(error);
-                });
-              alert("Forgot password email sent to " + forgotEmail);
+                .catch((error) => {});
+              alert("Forgot password email sent to email provdied");
             }}
           >
             <input
