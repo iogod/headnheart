@@ -89,7 +89,7 @@ function ServicesCard({ title, serviceSrc }) {
               type="text"
               id="company"
               name="company"
-              placeholder="Comapny"
+              placeholder="Company"
               onChange={(e) => {
                 setCompany(e.target.value);
               }}
@@ -113,7 +113,7 @@ function ServicesCard({ title, serviceSrc }) {
               maxLength={"200"}
               rows="7"
               required
-              placeholder=" Please leave a quick description and availability (Max 200 characters) "
+              placeholder="Please leave a quick description and availability (Max 200 characters) "
               onChange={(e) => {
                 setTextBody(e.target.value);
               }}
