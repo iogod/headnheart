@@ -5,7 +5,7 @@ import { getAuth } from "firebase/auth";
 
 function Former({ updateComment }) {
   const auth = getAuth();
-
+  const [loadingState, setLoadingState] = useState(false);
   const [idToken, setidToken] = useState("");
   const GetToken = async () => {
     getAuth().onAuthStateChanged((user) => {
@@ -23,7 +23,12 @@ function Former({ updateComment }) {
     },
   };
 
+  const Spinner = () => {
+    return <div class="spinner-border" role="status"></div>;
+  };
+
   const handleSubmit = async () => {
+    setLoadingState(true);
     await axios
       .post(
         "https://us-central1-hnh-chuki.cloudfunctions.net/resume/comment",
@@ -94,7 +99,10 @@ function Former({ updateComment }) {
           required
         ></textarea>
         <br />
-        <button type="submit">Submit</button>
+        {loadingState && <Spinner />}
+        <button hidden={loadingState} type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
