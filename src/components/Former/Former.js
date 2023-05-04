@@ -59,6 +59,7 @@ function Former({ updateComment }) {
       })
       .catch((error) => {
         alert(error);
+        setLoadingState(false);
       });
   };
 
